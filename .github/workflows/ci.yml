@@ -22,7 +22,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     strategy:
      matrix:
-      node-version: [12.x]
+      node-version: [14.x]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2

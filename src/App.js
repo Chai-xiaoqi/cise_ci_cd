@@ -1,9 +1,8 @@
 /* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/sort-comp */
 import React, { Component } from "react"
 
 class App extends Component {
-  increment = this.makeIncrementer(1)
-
   constructor() {
     super()
     this.state = {
@@ -15,6 +14,8 @@ class App extends Component {
     this.setState((prevState) => ({
       count: prevState.count + amount,
     }))
+
+  increment = this.makeIncrementer(1)
 
   render() {
     return (

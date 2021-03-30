@@ -44,3 +44,9 @@ jobs:
          # run a single command: lint
       - name: Test lint
         run: npm run lint
+      - name: Deploy Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "CISE_CI_CD" #Must be unique in Heroku
+          heroku_email: "a1057492951@gmail.com"
